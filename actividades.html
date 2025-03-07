@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividades</title>
+  <link rel="stylesheet" href="css/actividades.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <a href="home.html" onclick="showExercise0()">Home</a>
+    <a href="actividades.html" onclick="showExercise1()">Actividades</a>
+    <a href="social.html" onclick="showExercise2()">Social</a>
+    <a href="perfil.html" onclick="showExercise3()">Perfil</a>
+    <!--<a href="javascript:void(0)" onclick="showExercise4()">Exercici 4</a>-->
+    <!--<a href="javascript:void(0)" onclick="showExercise5()">Exercici 5</a>-->
+  </nav>
+
+  <!-- ACTIVIDADES -->
+  <section class="row">
+    <div class="main">
+      <h2>Actividades</h2>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Buscar actividad..." onkeyup="filterActivities()">
+      </div>
+      <div class="filter-buttons">
+        <button class="filter-btn" onclick="filterByTag('Meditación')">Meditación</button>
+        <button class="filter-btn" onclick="filterByTag('Ejercicio')">Ejercicio</button>
+        <button class="filter-btn" onclick="filterByTag('Relajación')">Relajación</button>
+        <button class="filter-btn" onclick="filterByTag('Yoga')">Yoga</button>
+        <button class="filter-btn" onclick="filterByTag('Respiración')">Respiración</button>
+        <button class="filter-btn" onclick="filterByTag('Todas')">Todas</button>
+      </div>
+      <div class="activity-container">
+        <div class="activity-card" data-tag="Meditación">
+          <img src="imatge/unweymeditando.png" alt="Meditación">
+          <p>Meditación</p>
+        </div>
+        <div class="activity-card" data-tag="Ejercicio">
+          <img src="imatge/unweymeditando.png" alt="Ejercicio">
+          <p>Ejercicio</p>
+        </div>
+        <div class="activity-card" data-tag="Yoga">
+          <img src="imatge/unweymeditando.png" alt="Yoga">
+          <p>Yoga</p>
+        </div>
+        <div class="activity-card" data-tag="Respiración">
+          <img src="imatge/unweymeditando.png" alt="Respiración">
+          <p>Respiración</p>
+        </div>
+        <div class="activity-card" data-tag="Relajación">
+          <img src="imatge/unweymeditando.png" alt="Relajación">
+          <p>Relajación</p>
+        </div>
+        <div class="activity-card" data-tag="Música">
+          <img src="imatge/unweymeditando.png" alt="Música">
+          <p>Música</p>
+        </div>
+        <div class="activity-card" data-tag="Pintura">
+          <img src="imatge/unweymeditando.png" alt="Pintura">
+          <p>Pintura</p>
+        </div>
+        <div class="activity-card" data-tag="Escritura">
+          <img src="imatge/unweymeditando.png" alt="Escritura">
+          <p>Escritura</p>
+        </div>
+        <div class="activity-card" data-tag="Danza">
+          <img src="imatge/unweymeditando.png" alt="Danza">
+          <p>Danza</p>
+        </div>
+        <div class="activity-card" data-tag="Deporte">
+          <img src="imatge/unweymeditando.png" alt="Deporte">
+          <p>Deporte</p>
+        </div>
+        <div class="activity-card" data-tag="Naturaleza">
+          <img src="imatge/unweymeditando.png" alt="Naturaleza">
+          <p>Naturaleza</p>
+        </div>
+        <div class="activity-card" data-tag="Fotografía">
+          <img src="imatge/unweymeditando.png" alt="Fotografía">
+          <p>Fotografía</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/actividades.js"></script>
+
+</body>
+</html>
