@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/home.css">
+
+  <!-- Aquests són els enllaços dels arxius de JS, que estan enllaçats al home.html. -->
+  <script src="js/home.js" defer></script>
+  <script src="js/exercici1.js" defer></script>
+  <script src="js/exercici2.js" defer></script>
+  <script src="js/exercici3.js" defer></script>
+  <!--<script src="js/exercici4.js" defer></script>-->
+  <!--<script src="js/exercici5.js" defer></script>-->
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <a href="javascript:void(0)" onclick="showExercise0()">Home</a>
+    <a href="actividades.html" onclick="showExercise1()">Actividades</a>
+    <a href="javascript:void(0)" onclick="showExercise2()">Social</a>
+    <a href="javascript:void(0)" onclick="showExercise3()">Perfil</a>
+    <!--<a href="javascript:void(0)" onclick="showExercise4()">Exercici 4</a>-->
+    <!--<a href="javascript:void(0)" onclick="showExercise5()">Exercici 5</a>-->
+  </nav>
+
+  <!-- INICIO -->
+  <section class="row">
+    <div class="main inici-container">
+      <div class="left-content">
+        <h2>PauseApp</h2>
+        <div class="recommended-activities">
+          <p>Actividades recomendadas:</p>
+          <div class="recommended-container">
+            <div class="recommended-card">
+              <img src="imatge/unweymeditando.png" alt="Meditación">
+              <p>Meditación</p>
+            </div>
+            <div class="recommended-card">
+              <img src="imatge/unweymeditando.png" alt="Meditación">
+              <p>Meditación</p>
+            </div>
+            <div class="recommended-card">
+              <img src="imatge/unweymeditando.png" alt="Meditación">
+              <p>Meditación</p>
+            </div>
+            <div class="recommended-card">
+              <img src="imatge/unweymeditando.png" alt="Meditación">
+              <p>Meditación</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="imatge-dreta">
+        <img src="imatge/unweymeditando.png" alt="Imagen de referencia">
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVIDADES -->
+  <section class="row">
+    <div class="main">
+      <h2>Actividades</h2>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Buscar actividad..." onkeyup="filterActivities()">
+      </div>
+      <div class="filter-buttons">
+        <button class="filter-btn" onclick="filterByTag('Meditación')">Meditación</button>
+        <button class="filter-btn" onclick="filterByTag('Ejercicio')">Ejercicio</button>
+        <button class="filter-btn" onclick="filterByTag('Relajación')">Relajación</button>
+        <button class="filter-btn" onclick="filterByTag('Yoga')">Yoga</button>
+        <button class="filter-btn" onclick="filterByTag('Respiración')">Respiración</button>
+        <button class="filter-btn" onclick="filterByTag('Todas')">Todas</button>
+      </div>
+      <div class="activity-container">
+        <div class="activity-card" data-tag="Meditación">
+          <img src="imatge/unweymeditando.png" alt="Meditación">
+          <p>Meditación</p>
+        </div>
+        <div class="activity-card" data-tag="Ejercicio">
+          <img src="imatge/unweymeditando.png" alt="Ejercicio">
+          <p>Ejercicio</p>
+        </div>
+        <div class="activity-card" data-tag="Yoga">
+          <img src="imatge/unweymeditando.png" alt="Yoga">
+          <p>Yoga</p>
+        </div>
+        <div class="activity-card" data-tag="Respiración">
+          <img src="imatge/unweymeditando.png" alt="Respiración">
+          <p>Respiración</p>
+        </div>
+        <div class="activity-card" data-tag="Relajación">
+          <img src="imatge/unweymeditando.png" alt="Relajación">
+          <p>Relajación</p>
+        </div>
+        <div class="activity-card" data-tag="Música">
+          <img src="imatge/unweymeditando.png" alt="Música">
+          <p>Música</p>
+        </div>
+        <div class="activity-card" data-tag="Pintura">
+          <img src="imatge/unweymeditando.png" alt="Pintura">
+          <p>Pintura</p>
+        </div>
+        <div class="activity-card" data-tag="Escritura">
+          <img src="imatge/unweymeditando.png" alt="Escritura">
+          <p>Escritura</p>
+        </div>
+        <div class="activity-card" data-tag="Danza">
+          <img src="imatge/unweymeditando.png" alt="Danza">
+          <p>Danza</p>
+        </div>
+        <div class="activity-card" data-tag="Deporte">
+          <img src="imatge/unweymeditando.png" alt="Deporte">
+          <p>Deporte</p>
+        </div>
+        <div class="activity-card" data-tag="Naturaleza">
+          <img src="imatge/unweymeditando.png" alt="Naturaleza">
+          <p>Naturaleza</p>
+        </div>
+        <div class="activity-card" data-tag="Fotografía">
+          <img src="imatge/unweymeditando.png" alt="Fotografía">
+          <p>Fotografía</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL -->
+  <section class="row">
+    <div class="main">
+      <h2>Mis amigos</h2>
+    </div>
+  </section>
+
+  <!-- PERFIL -->
+  <section class="row">
+    <aside class="side">
+      <figure class="fakeimg" style="height:200px;">
+        <img src="imatge/iconoperfil.jpg" alt="Foto de perfil" style="height: 100%; width: auto;">
+      </figure>
+    </aside>
+    <div class="main">
+      <h2>Mi perfil</h2>
+      <h3>Datos personales</h3>
+      <div class="data-card">
+        <div class="info">
+          <p><strong>Nombre:</strong> Enric Ulloa Flores</p>
+          <p><strong>Correo:</strong> 2024_enric.ulloa@iticbcn.cat</p>
+          <p><strong>Edad:</strong> 23 años</p>
+          <p><strong>Fecha de Nacimiento:</strong> 21/02/2002</p>
+        </div>
+      </div>
+      <br>
+      <h3>Datos adicionales</h3>
+      <div class="data-card">
+        <div class="info">
+          <p><strong>Días usando PauseApp:</strong> 28 días</p>
+          <p><strong>Número de actividades realizadas:</strong> 45 actividades</p>
+        </div>
+      </div>
+      <button class="logout" onclick="location.href='login.html'">Cerrar sesión</button>
+    </div>
+  </section>
+
+  <script>
+    window.onload = function () {
+      showExercise0(); // Asegura que INICI se muestre primero
+    };
+  </script>
+
+</body>
+</html>
