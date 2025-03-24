@@ -24,4 +24,14 @@ function filterActivities() {
       }
     });
   }
-  
+
+// Agregar evento de redirección al hacer clic en una tarjeta
+const activityCards = document.querySelectorAll(".activity-card");
+
+activityCards.forEach(card => {
+    card.addEventListener("click", () => {
+        let activityName = card.innerText.trim(); // Obtener el nombre de la actividad
+        let formattedName = activityName.replace(/\s+/g, '_'); // Reemplazar espacios por guiones bajos
+        window.location.href = `nomActividad.html?actividad=${formattedName}`;
+    });
+});

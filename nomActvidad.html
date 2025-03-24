@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nomActividad</title>
+  <link rel="stylesheet" href="css/nomActividad.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <a href="home.html" onclick="showExercise0()">Home</a>
+    <a href="actividades.html" onclick="showExercise1()">Actividades</a>
+    <a href="social.html" onclick="showExercise2()">Social</a>
+    <a href="perfil.html" onclick="showExercise3()">Perfil</a>
+    <!--<a href="javascript:void(0)" onclick="showExercise4()">Exercici 4</a>-->
+    <!--<a href="javascript:void(0)" onclick="showExercise5()">Exercici 5</a>-->
+  </nav>
+
+  <!-- INICIO -->
+  <section class="contenedor-actividad">
+    <div class="main">
+      <h1 class="titulo-actividad">Nombre Actividad</h1>
+      <p class="descripcion-actividad">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissimos nemo dolorum, ipsum, 
+        voluptates odit repudiandae rem rerum delenti incidunt, sequi esse eius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissimos nemo dolorum, ipsum, 
+        voluptates odit repudiandae rem rerum delenti incidunt, sequi esse eius.
+      </p>
+      <div class="botones-actividad">
+        <button class="boton boton-empezar">Empezar</button>
+        <button class="boton boton-info">Información</button>
+      </div>
+    </div>
+
+    <div class="contenedor-video">
+      <video class="video-actividad" controls>
+        <source src="imatge/20250319_120416.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
+
+  </section>
+
+  <script src="js/nomActividad.js" defer></script>
+
+</body>
+</html>
