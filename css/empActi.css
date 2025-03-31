@@ -55,7 +55,7 @@ body {
 
   .main h2 {
     font-size: 26px;
-    margin-bottom: 20px;
+    margin: 30px 0 10px 0;
     font-weight: bold;
   }
 
@@ -126,6 +126,8 @@ video {
 
 .video-container video {
   width: 100%;
+  max-width: 700px; /* Reducido un poco */
+  height: auto;
   border-radius: 10px;
 }
 /*ESTO ES PARA EL VIDEO*/
@@ -136,11 +138,12 @@ video {
   background-color: #6a0dad;
   padding: 15px 25px;
   border-radius: 20px;
-  display: inline-block;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 250px;
-  margin-top: 20px;
+  margin-top: 30px; /* Un poco más de espacio respecto al título */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -169,14 +172,16 @@ video {
   background-color: #4A148C;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 12px 20px; /* Más grande para mejor interacción */
   margin: 5px;
-  border-radius: 8px;
+  border-radius: 12px; /* Más redondeado */
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .timer-buttons button:hover {
   background-color: #311B92;
+  transform: scale(1.05); /* Pequeño efecto de agrandado */
 }
 /*ESTO ES PARA EL TEMPORIZADOR*/
