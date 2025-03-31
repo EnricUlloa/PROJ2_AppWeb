@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empezar Actividad</title>
+  <link rel="stylesheet" href="css/empActi.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <a href="home.html" onclick="showExercise0()">Home</a>
+    <a href="actividades.html" onclick="showExercise1()">Actividades</a>
+    <a href="social.html" onclick="showExercise2()">Social</a>
+    <a href="perfil.html" onclick="showExercise3()">Perfil</a>
+    <!--<a href="javascript:void(0)" onclick="showExercise4()">Exercici 4</a>-->
+    <!--<a href="javascript:void(0)" onclick="showExercise5()">Exercici 5</a>-->
+  </nav>
+
+  <!-- EMPEZAR ACTIVIDAD -->
+  <section class="row">
+
+    <div class="video-container">
+      <video controls>
+        <source src="imatge/20250319_120416.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
+
+    <!-- Título de la actividad -->
+    <h2 class="activity-title">Nombre Actividad</h2>
+
+    <!-- Contenedor del temporizador -->
+    <div class="timer-container">
+      <span id="display">00 : 00 : 00 : 00</span>
+      <div class="timer-buttons">
+          <button onclick="start()">Start</button>
+          <button onclick="stop()">Stop</button>
+          <button onclick="reset()">Reset</button>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="js/empActi.js"></script>
+
+</body>
+</html>
