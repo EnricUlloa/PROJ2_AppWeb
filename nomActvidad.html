@@ -36,7 +36,33 @@
       </p>
       <div class="botones-actividad">
         <button class="boton boton-empezar" onclick="location.href='empActi.html'">Empezar</button>
-        <button class="boton boton-info">Información</button>
+        <button class="boton boton-info" id="info-btn">Información</button>
+      </div>
+    </div>
+
+    <!-- Modal de Información -->
+    <!-- Esto es la pantalla emergente al picar el boton de informacion -->
+    <div id="info-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 class="modal-title">Información</h2>
+    
+        <div class="modal-body">
+          <div class="activity-info">
+            <h3>Nombre de la actividad</h3>
+            <div class="activity-icon">
+              <img src="imatge/unweymeditando.png" alt="Meditación">
+              <p>Meditación</p>
+            </div>
+          </div>
+    
+          <div class="time-info">
+            <h3>Tiempo en la actividad:</h3>
+            <div class="time-box">00:30</div>
+          </div>
+        </div>
+    
+        <button id="close-modal-btn" class="modal-button">Entendido</button>
       </div>
     </div>
 
