@@ -1,0 +1,182 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #00004E; /* Fondo global */
+    color: white; /* Texto en blanco para contraste */
+    text-align: center;
+    padding: 0;
+  }
+  
+  /* Header/logo */
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    display: flex;
+    background-color: #5A1AB9;
+    justify-content: left;  /* Mantener alineación original */
+    padding: 10px 0;
+  }
+  
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Contenedor de columnas */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .main h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  
+  /* Sidebar / Columna izquierda */
+  .side {
+    flex: 30%;
+    background-color: transparent; /* Fondo eliminado para no sobreescribir el global */
+    padding: 20px;
+  }
+  
+  /* Contenido principal */
+  .main {
+    flex: 70%;
+    background-color: transparent; /* Fondo eliminado para mantener el #00004E global */
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  /* Titulares */
+  h2 {
+    color: white;
+    text-align: center;
+  }
+  
+  /* Pie de página */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Diseño responsive */
+  @media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  
+    .navbar a {
+      padding: 10px;
+    }
+  
+    .side, .main {
+      flex: 100%;
+      text-align: center;
+    }
+  }
+
+/*ESTO ES PARA EL VIDEO*/
+/* Video Container */
+.video-container {
+  width: 70%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/*ESTO ES ALGO ------------------------------------*/
+video {
+  width: 70%; /* Ajustar tamaño del video */
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+/*ESTO ES ALGO ------------------------------------*/
+
+.video-container video {
+  width: 100%;
+  border-radius: 10px;
+}
+/*ESTO ES PARA EL VIDEO*/
+
+/*ESTO ES PARA EL TEMPORIZADOR*/
+/* Timer Section */
+.timer-container {
+  background-color: #6a0dad;
+  padding: 15px 25px;
+  border-radius: 20px;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*ESTO ES ALGO ------------------------------------*/
+.timer-container span {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+/*ESTO ES ALGO ------------------------------------*/
+
+.timer-display {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/*ESTO ES ALGO ------------------------------------*/
+/* Botones del temporizador */
+.timer-buttons {
+  margin-top: 10px;
+}
+/*ESTO ES ALGO ------------------------------------*/
+
+.timer-buttons button {
+  background-color: #4A148C;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.timer-buttons button:hover {
+  background-color: #311B92;
+}
+/*ESTO ES PARA EL TEMPORIZADOR*/
