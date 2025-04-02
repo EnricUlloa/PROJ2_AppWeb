@@ -166,3 +166,65 @@ body {
   }
   
   /*PARA LAS TARJETAS EN DONDE ESTAN LAS DIFERENTES ACTIVIDADES, DEBAJO DE LOS BOTONES DE LA SECCION ACTIVIDADES*/
+
+/*APARTIR DE AQUI ES EL DISEÑO DEL MODAL*/
+/* Estilos para el modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  background: #5a1d9e;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Contenido del modal */
+.modal-content {
+  position: relative;
+  padding: 20px;
+}
+
+/* Botón de cierre */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido */
+  margin-bottom: 20px;
+}
+
+.activity-info {
+  text-align: center;
+}
+
+.modal-button {
+  background: #f7941d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
