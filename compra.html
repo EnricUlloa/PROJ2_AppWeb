@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/compra.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <a href="home.html" onclick="showExercise0()">Home</a>
+    <a href="actividades.html" onclick="showExercise1()">Actividades</a>
+    <a href="social.html" onclick="showExercise2()">Social</a>
+    <a href="perfil.html" onclick="showExercise3()">Perfil</a>
+    <!--<a href="javascript:void(0)" onclick="showExercise4()">Exercici 4</a>-->
+    <!--<a href="javascript:void(0)" onclick="showExercise5()">Exercici 5</a>-->
+  </nav>
+
+  <!-- INICIO -->
+  <section class="row">
+    <div class="main">
+        <div class="subscription-container">
+            <h2 class="subscription-title">Plan de suscripción</h2>
+            <p class="subscription-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nemo dolorum, ipsam, voluptates odit repudiandae rem rerum deleniti incidunt, sequi esse eius. </p>
+        </div>
+        <div class="payment-card">
+            <h3 class="payment-title">Payment Details</h3>
+            
+            <label for="card-number" class="card-label">Card Number</label>
+            <input type="text" id="card-number" class="card-input" placeholder="XXXX XXXX XXXX XXXX">
+        
+            <button class="buy-button">Buy</button>
+        </div>
+        
+    </div>
+  </section>
+
+  <script src="js/compra.js" defer></script>
+
+</body>
+</html>

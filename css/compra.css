@@ -1,0 +1,169 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #00004E; /* Fondo global */
+    color: white; /* Texto en blanco para contraste */
+  }
+  
+  /* Header/logo */
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    display: flex;
+    background-color: #5A1AB9;
+    justify-content: left;  /* Mantener alineación original */
+    padding: 10px 0;
+  }
+  
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Contenedor de columnas */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Sidebar / Columna izquierda */
+  .side {
+    flex: 30%;
+    background-color: transparent; /* Fondo eliminado para no sobreescribir el global */
+    padding: 20px;
+  }
+  
+  /* Contenido principal */
+  .main {
+    flex: 70%;
+    background-color: transparent; /* Fondo eliminado para mantener el #00004E global */
+    padding: 20px;
+  }
+  
+  /* Titulares */
+  h2 {
+    color: white;
+    text-align: center;
+  }
+  
+  /* Pie de página */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Diseño responsive */
+  @media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  
+    .navbar a {
+      padding: 10px;
+    }
+  
+    .side, .main {
+      flex: 100%;
+      text-align: center;
+    }
+  }
+
+/* APARTIR DE AQUI HAY CODIGO PARA LA PARTE IZQUIERDA DE LA PAGINA */
+/* Contenedor del plan de suscripción */
+.subscription-container {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+/* Título */
+.subscription-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Texto descriptivo */
+.subscription-text {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+/*ESTO ES PARA EL RECUADRO DE LA DERECHA PARA PAGAR*/
+/* Estilos del recuadro de pago */
+.payment-card {
+    background-color: #5A1AB9;
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Título "Payment Details" */
+.payment-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Etiqueta "Card Number" */
+.card-label {
+    font-size: 16px;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Campo de entrada */
+.card-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Botón "Buy" */
+.buy-button {
+    background-color: #f7941d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.buy-button:hover {
+    background-color: #d47c11;
+}
