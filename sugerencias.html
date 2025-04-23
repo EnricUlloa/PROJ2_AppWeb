@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugerencias</title>
+  <link rel="stylesheet" href="css/sugerencias.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="actividades.html">Actividades</a>
+    <a href="social.html">Social</a>
+    <a href="perfil.html">Perfil</a>
+  </nav>
+
+  <!-- INICIO -->
+  <section class="row">
+    <div class="main">
+        <div class="titulo">
+            <a aria-current="page" class="sitge" href="sugerencias.html">Sugerencias</a>
+        </div>
+        <div class="paradox">
+            <div>¿Cómo podemos ayudarte?</div>
+        </div>
+
+        <div class="forma">
+          <!-- Lado izquierdo: información -->
+          <div class="silver">
+              <div class="proc">Describe el problema</div>
+              <div class="texto">
+                  <div>Por favor, describe el problema con tantos detalles como puedas. Nos ayudará a entender mejor qué es lo que ocurre.</div>
+              </div>
+          </div>
+
+          <!-- Lado derecho: formulario -->
+          <div class="gold">
+              <!-- Campo nombre -->
+              <div class="box">
+                  <div class="correo">
+                      Tu nombre
+                      <span class="shell">*</span>
+                  </div>
+                  <div class="caja">
+                      <div class="recuadro">
+                        <input class="intro" id="nombre" type="text" required>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Campo correo -->
+              <div class="box">
+                  <div class="correo">
+                      Tu dirección de correo electrónico
+                      <span class="shell">*</span>
+                  </div>
+                  <div class="caja">
+                      <div class="recuadro">
+                        <input class="intro" id="correo" type="email" required>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Campo sugerencia -->
+              <div class="box">
+                  <div class="correo">
+                      Escribe tu sugerencia
+                      <span class="shell">*</span>
+                  </div>
+                  <div class="caja">
+                      <div class="recuadro">
+                        <textarea class="intro" id="sugerencia" rows="6" required></textarea>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Botón enviar -->
+              <div class="box">
+                  <button class="intro" type="submit">Enviar sugerencia</button>
+              </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <script src="js/sugerencias.js" defer></script>
+</body>
+</html>
