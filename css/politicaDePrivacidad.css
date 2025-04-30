@@ -1,0 +1,170 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #00004E; /* Fondo global */
+    color: white; /* Texto en blanco para contraste */
+  }
+  
+  /* Header/logo */
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*Diseño para los h1, h2, h3, etc*/
+  h1, h2 {
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 0 50px;
+  }
+
+  h3, h4 {
+    margin: 0 0 10px;
+  }
+
+  h3 {
+    font-size: 19px;
+    font-weight: 700;
+  }
+
+  .main p {
+    line-height: 130%;
+  }
+
+  p {
+    margin: 0 0 18px;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  .main ol {
+    list-style: decimal none outside;
+    margin: 0 0 0 20px;
+  }
+
+  ol, ul {
+    padding: 0;
+  }
+
+  .main li {
+    margin-bottom: 40px;
+  }
+
+  .main h4 {
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  .main.glados h4 {
+    font-size: 18px;
+    padding-left: 24px;
+  }
+
+  .main .final {
+    margin-bottom: 40px;
+  }
+  
+  .main ul {
+    list-style: circle none outside;
+    margin: 0 0 18px 30px;
+  }
+
+  .main.glados ul li {
+    list-style-type: disc;
+  }
+
+  .main ul li {
+    margin-bottom: 0;
+  }
+
+  /* Barra de navegación */
+  .navbar {
+    display: flex;
+    background-color: #5A1AB9;
+    justify-content: left;  /* Mantener alineación original */
+    padding: 10px 0;
+  }
+  
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Contenedor de columnas */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Sidebar / Columna izquierda */
+  .side {
+    flex: 30%;
+    background-color: transparent; /* Fondo eliminado para no sobreescribir el global */
+    padding: 20px;
+  }
+  
+  /* Contenido principal */
+  .main {
+    --scroll-offset: calc(var(--app-offset) * -1 - 24px);
+  }
+  
+  .ftp {
+    background-color: #00004E;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 880px;
+    overflow: hidden;
+    padding: 24px;
+  }
+
+  /* Pie de página */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Diseño responsive */
+  @media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  
+    .navbar a {
+      padding: 10px;
+    }
+  
+    .side, .main {
+      flex: 100%;
+      text-align: center;
+    }
+
+    .main p {
+        font-size: inherit;
+        text-align: justify;
+    }
+
+    .main h4 {
+      font-size: 15px;
+    }
+  }
