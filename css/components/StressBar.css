@@ -1,0 +1,17 @@
+.stress-bar {
+    display: block;
+    height: 25px;
+
+    & > div {
+        display: block;
+        height: 100%;
+        position: relative;
+
+        img {
+            height: 60px;
+            position: absolute;
+            right: 0;
+            transform: translate(50%, -25%);
+        }
+    }
+}

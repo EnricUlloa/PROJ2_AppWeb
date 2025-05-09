@@ -1,0 +1,50 @@
+:root {
+    --white: #F5F5F5;
+    --black: #222;
+    --blue-dark: #00004E;
+    --purple: #5A1AB9;
+    --purple-2: #35106b;
+    --blue: #1D1AB9;
+    --orange: #EE820D;
+    --red: #f44;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--blue-dark);
+    color: var(--white);
+    padding-top: 70px;
+}
+
+input, textarea, select, option {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+input[type="file"] {
+    background: var(--blue-dark);
+}
+
+button, .button {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    min-width: max-content;
+    outline: none;
+    text-align: center;
+}

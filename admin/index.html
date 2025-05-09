@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/components/Navbar.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="root">
+        <main >
+            <div>
+                <span>ID</span>
+                <b>Nombre</b>
+            </div>
+
+            <div id="activity-table">
+
+            </div>
+        </main>
+    
+        <aside>
+            <form id="create-atype-form">
+                <h2>Crear Categoria</h2>
+                <h3>Nombre:</h3>
+                <input type="text" placeholder="Nombre">
+                <button>Crear</button>
+            </form>
+        
+            <form id="create-activity-form">
+                <h2>Crear Actividad</h2>
+                <h3>Nombre:</h3>
+                <input type="text" placeholder="Nombre">
+                <h3>Descripción:</h3>
+                <textarea placeholder="Descripción"></textarea>
+                <h3>Categoria:</h3>
+                <select id="atype-selector"></select>
+                <h3>Video:</h3>
+                <input type="file" id="media-input">
+                <label style="display: flex; align-items: center; gap: 5px;">
+                    <input type="checkbox" name="" id="">
+                    <span class="material-symbols-outlined" style="color: var(--orange);">crown</span>Premium
+                </label>
+                <button>Crear</button>
+            </form>
+        </aside>
+    </div>
+</body>
+<script type="module" src="page.js"></script>
+</html>

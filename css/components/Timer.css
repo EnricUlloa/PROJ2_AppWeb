@@ -1,0 +1,19 @@
+.timer {
+    display: flex;
+    gap: 5px;
+    background: var(--purple);
+    padding: 20px;
+    border-radius: 8px;
+
+    span {
+        background: var(--white);
+        color: var(--black);
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    button {
+        min-width: 100px;
+    }
+}

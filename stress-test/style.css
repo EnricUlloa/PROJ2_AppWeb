@@ -1,0 +1,32 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20%;
+    padding-bottom: 5rem;
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    & > div > label {
+        display: flex;
+        gap: 10px;
+        padding-left: 20px;
+        width: 100%;
+        background: var(--purple);
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    & > div > label > input {
+        display: none;
+    }
+
+    label:has(input[type="radio"]:checked) {
+        background: var(--orange);
+        font-weight: bold;
+    }
+}

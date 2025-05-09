@@ -1,0 +1,88 @@
+{
+    "test": [
+        {
+            "question": "¿Cuántas horas de sueño promedio tienes por noche?",
+            "options": [
+                {
+                    "answer": "Más de 7 horas",
+                    "value": 0
+                },
+                {
+                    "answer": "Entre 5 y 7 horas",
+                    "value": 10
+                },
+                {
+                    "answer": "Menos de 5 horas",
+                    "value": 20
+                }
+            ]
+        },
+        {
+            "question": "¿Con qué frecuencia sientes que no tienes tiempo suficiente para ti?",
+            "options": [
+                {
+                    "answer": "Siempre",
+                    "value": 0
+                },
+                {
+                    "answer": "A menudo",
+                    "value": 5
+                },
+                {
+                    "answer": "A veces",
+                    "value": 10
+                },
+                {
+                    "answer": "Nunca",
+                    "value": 20
+                }
+            ]
+        },
+        {
+            "question": "Cuando te enfrentas a situaciones estresantes, ¿cómo reaccionas principalmente?",
+            "options": [
+                {
+                    "answer": "No me afecta mucho",
+                    "value": 0
+                },
+                {
+                    "answer": "Intento mantener la calma y resolver el problema",
+                    "value": 5
+                },
+                {
+                    "answer": "Me frustro o me irrito con facilidad",
+                    "value": 15
+                },
+                {
+                    "answer": "Me paralizo y no sé qué hacer",
+                    "value": 20
+                }
+            ]
+        },
+        {
+            "question": "¿Con qué frecuencia utilizas actividades de relajación o mindfulness?",
+            "options": [
+                {
+                    "answer": "A diario",
+                    "value": 0
+                },
+                {
+                    "answer": "Algunas veces a la semana",
+                    "value": 5
+                },
+                {
+                    "answer": "Rara vez",
+                    "value": 10
+                },
+                {
+                    "answer": "Nunca",
+                    "value": 20
+                }
+            ]
+        },
+        {
+            "question": "En una escala del 0 al 10, ¿cómo evaluarías tu nivel de estrés actual?",
+            "range": [0, 100]
+        }
+    ]
+}

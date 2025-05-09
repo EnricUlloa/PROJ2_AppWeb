@@ -1,0 +1,166 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #00004E; /* Fondo global */
+    color: white; /* Texto en blanco para contraste */
+  }
+  
+  /* Header/logo */
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    display: flex;
+    background-color: #5A1AB9;
+    justify-content: left;  /* Mantener alineación original */
+    padding: 10px 0;
+  }
+  
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Contenedor de columnas */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Sidebar / Columna izquierda */
+  .side {
+    flex: 30%;
+    background-color: transparent; /* Fondo eliminado para no sobreescribir el global */
+    padding: 20px;
+  }
+  
+  /* Contenido principal */
+  .main {
+    flex: 70%;
+    background-color: transparent; /* Fondo eliminado para mantener el #00004E global */
+    padding: 20px;
+  }
+  
+  /* Titulares */
+  .titulo {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sitge {
+    outline: none;
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: 700;
+    height: fit-content;
+    text-align: left;
+    white-space: break-spaces;
+    color: white;
+  }
+  
+  .paradox {
+    display: flex;
+    font-size: 32px;
+    justify-content: center;
+    line-height: 40px;
+    margin: 48px 0;
+    text-align: center;
+  }
+
+  .forma {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
+  .recuadro {
+    margin-bottom: 48px;
+  }
+
+  .como {
+    border: 2px solid white;
+    border-radius: 16px;
+  }
+
+  .uno {
+    border-bottom: 2px solid white;
+    color: white;
+    font-weight: 700;
+  }
+
+  .dos {
+    padding: 26px 32px;
+  }
+
+  .primero {
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  .q30ds {
+    font-weight: 700;
+  }
+
+  .testo {
+    padding: 0 32px 26px;
+  }
+
+  .yavin {
+    margin-bottom: 20px;
+  }
+
+  .ocho{
+    line-height: 27px;
+    overflow-wrap: break-word;
+  }
+
+  .nueve {
+    margin-bottom: 20px;
+  }
+
+  /* Pie de página */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Diseño responsive */
+  @media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  
+    .navbar a {
+      padding: 10px;
+    }
+  
+    .side, .main {
+      flex: 100%;
+      text-align: center;
+    }
+  }

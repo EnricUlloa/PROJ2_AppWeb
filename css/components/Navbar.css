@@ -1,0 +1,39 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #5A1AB9;
+    padding: 10px;
+}
+  
+.navbar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 15px;
+    min-width: 100px;
+
+    span {
+        color: var(--orange);
+    }
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar button {
+    margin-left: auto;
+    margin-right: 20px;
+}
