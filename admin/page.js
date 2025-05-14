@@ -34,12 +34,18 @@ async function main() {
         $input.textContent = activity.name;
         $div.appendChild($input);
 
-        const $editBtn = document.createElement("button");
-        $editBtn.textContent = "Editar";
-        $div.appendChild($editBtn);
-
         const $deleteBtn = document.createElement("button");
         $deleteBtn.textContent = "Eliminar";
+        $deleteBtn.addEventListener("click", async () => {
+            const confirmation = confirm(`Estas seguro que quieres eliminar la actividad '${activity.name}'`);
+
+            if (!confirmation) return;
+            
+            await PauseAppAPI.deleteActivity(activity.id);
+
+            $div.remove();
+            alert("Activdad eliminada correctamente");
+        });
         $div.appendChild($deleteBtn);
 
         $activityTable.appendChild($div);
@@ -65,7 +71,6 @@ async function main() {
     const $activityForm = document.getElementById("create-activity-form");
     $activityForm.addEventListener("submit", async (e) => {
         e.preventDefault(e);
-        console.log(e);
 
         const name = e.target[0].value.trim().toLowerCase();
         const desc = e.target[1].value.trim().toLowerCase();

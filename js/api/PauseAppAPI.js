@@ -98,4 +98,8 @@ export class PauseAppAPI extends API {
     static async deleteRelation(id) {
         return this.DELETE(`/user/relations/${id}`);
     }
+
+    static async deleteActivity(id) {
+        return this.DELETE(`/activity/${id}`);
+    }
 }
