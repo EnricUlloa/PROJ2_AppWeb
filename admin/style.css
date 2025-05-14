@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    height: 800px;
+    height: 890px;
     border: 2px solid var(--purple);
     border-radius: 8px;
 
@@ -54,6 +54,7 @@ main {
 aside {
     display: flex;
     flex-direction: column;
+    height: 100%;
     gap: 20px;
 }
 

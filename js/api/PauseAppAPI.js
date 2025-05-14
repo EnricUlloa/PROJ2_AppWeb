@@ -48,6 +48,10 @@ export class PauseAppAPI extends API {
         return this.POST("/activity/types", { name });
     }
 
+    static async createActivity(formData) {
+        return this.FORM("/activity", formData);
+    }
+
     static async addStressLevel(id, level) {
         return this.POST(`/user/${id}/stress-level`, { level });
     }

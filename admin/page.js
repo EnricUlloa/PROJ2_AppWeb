@@ -11,6 +11,7 @@ const renderCategoryOptions = async ()  => {
     categories.forEach(c => {
         const $option = document.createElement("option");
         $option.textContent = c.name;
+        $option.value = c.id;
 
         $selector.appendChild($option);
     });
@@ -59,6 +60,32 @@ async function main() {
         } else {
             alert("Error al crear categoria");
         }
+    });
+
+    const $activityForm = document.getElementById("create-activity-form");
+    $activityForm.addEventListener("submit", async (e) => {
+        e.preventDefault(e);
+        console.log(e);
+
+        const name = e.target[0].value.trim().toLowerCase();
+        const desc = e.target[1].value.trim().toLowerCase();
+        const category = e.target[2].value.trim().toLowerCase();
+        const thumbnail = e.target[3].files[0];
+        const media = e.target[4].files[0];
+        const isPremium = e.target[5].checked;
+        console.log(category);
+        
+        const formData = new FormData();
+        formData.append("name", name);
+        formData.append("description", desc);
+        formData.append("typeId", category);
+        formData.append("thumbnail", thumbnail);
+        formData.append("media", media);
+        formData.append("isPremium", isPremium);
+
+        const res = await PauseAppAPI.createActivity(formData);
+        
+        alert("Actividad Creada con exito");
     });
 }
 

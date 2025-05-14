@@ -4,9 +4,12 @@ import { authTokenKeyName } from "../config/constants.js";
 export class API {
     static baseUrl = "http://localhost:8080";
 
-    static getAuthHeaders() {
+    static getAuthHeaders(form = false) {
+        const headers = {};
         const token = new useLocalStorage(authTokenKeyName).get();
-        return token ? { Authorization: `Bearer ${token}`, "Content-Type": "application/json" } : { "Content-Type": "application/json" };
+        if (token) headers["Authorization"] = `Bearer ${token}`;
+        if (!form) headers["Content-Type"] = "application/json"
+        return headers;
     }
 
     static async GET(url) {
@@ -41,6 +44,24 @@ export class API {
         return { data, status: res.status };
     }
     
+    static async FORM(url, formData) {
+        const res = await fetch(`${this.baseUrl}${url}`, {
+            method: "POST",
+            headers: this.getAuthHeaders(true),
+            body: formData
+        });
+
+        if (!res.ok) return { status: res.status };
+    
+        const data = await res.json();
+    
+        if (typeof data === "object" && data !== null) {
+            data.status = res.status;
+            return data;
+        }
+    
+        return { data, status: res.status };
+    }
 
     static async PATCH(url, body) {
         const res = await fetch(`${this.baseUrl}${url}`, {

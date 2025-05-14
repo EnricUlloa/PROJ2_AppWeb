@@ -42,6 +42,7 @@ async function main() {
 
     $completeBtn.addEventListener("click", async () => {
         await PauseAppAPI.completeActivity({ userId: me.id, activityId: activity.id });
+        alert("Actividad completada");
     });
 
     $footer.appendChild($completeBtn);
