@@ -1,3 +1,3 @@
-# PROJ2_AppWeb
+API Rest: https://github.com/VictorMerinoITCBCN/PAUSEAPP-API/tree/main
 
-Para comenzar a ver la aplicacion Web se inicia desde el Login.
+Aplicación Android: https://github.com/LoniousSosa/PauseAppMovil
